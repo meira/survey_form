@@ -1,0 +1,109 @@
+<style>
+    body{
+        background-color:#001630;
+    }
+    div{
+        text-align: justify;
+        color: #006B63; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;       
+    }
+    p{
+        text-align: center;
+        display: block;
+    }
+    h1{
+        text-align: center;
+    }
+    .input-align{
+        width: 390px;
+        text-align: justify;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+    }
+    form textarea{
+        text-align: justify;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+    }
+    form select{
+        width: 390px;
+        text-align: justify;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+    }  
+    form button{
+        width: 390px;
+        height: 30px;
+        text-align: center;
+        background-color: rgb(0, 66, 0);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+    }        
+    .fullCard {
+        background-color:#010d1b;
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+</style>
+
+<div class="fullCard">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Research on interest in courses</p>
+
+    <form action="" id="survey-form">
+        <label id="name-label">Name</label><br>
+        <input class="input-align" type="text" placeholder="Enter your name" id="name" required><br><br>
+        <label id="email-label">Email</label><br>
+        <input class="input-align" type="email" placeholder="Enter your Email" id="email" required><br><br>
+        <label id="number-label">Number</label><br>
+        <input class="input-align" type="number" placeholder="Number" id="number" min="0" max="12"><br><br>
+        <label>Choose a course modality:</label><br>
+        <select id="dropdown">
+            <option value="presential">Presential</option>
+            <option value="distance-education">Distance Education</option>
+            <option value="semi-presential">Semi-presential</option>
+        </select><br><br>
+
+        <label>What period are you available to study in?</label><br>
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Morning</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Afternoon</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Night</label>
+        <br><br>
+
+        <label>What would you like study? (Check all that apply)</label><br>
+        <label><input type="checkbox" name="personality" value="python"> Python</label><br>
+        <label><input type="checkbox" name="personality" value="java"> Java</label><br>
+        <label><input type="checkbox" name="personality" value="java-script"> Java-script</label><br>
+        <label><input type="checkbox" name="personality" value="html"> HTML</label><br>
+        <label><input type="checkbox" name="personality" value="css"> CSS</label><br>
+        <label><input type="checkbox" name="personality" value="abap"> ABAP</label><br><br>
+
+        <label for="comments">Any comments or suggestions?</label><br>
+
+        <textarea id="comments" name="comments" rows="9" cols="52">
+            Enter your comment here...
+        </textarea><br><br>
+
+        <button id="submit" type="submit"><b>Submit</b></button><br>
+        
+    </form>
+</div>
+
